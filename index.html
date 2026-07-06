@@ -43,9 +43,9 @@
          ========================================== -->
     <section id="hero">
         <div class="hero-content">
-            <span class="hero-tagline scroll-reveal">Faction Officielle - Paladium V10</span>
-            <h1 class="hero-title scroll-reveal delay-100">ZÉNITH</h1>
-            <p class="hero-desc scroll-reveal delay-200">Atteindre les sommets, dominer le classement et forger notre légende sur le plus grand serveur PvP-Faction moddé francophone.</p>
+            <span class="hero-tagline scroll-reveal" id="hero-tagline">Faction Officielle - Paladium V10</span>
+            <h1 class="hero-title scroll-reveal delay-100" id="hero-title">ZÉNITH</h1>
+            <p class="hero-desc scroll-reveal delay-200" id="hero-desc">Atteindre les sommets, dominer le classement et forger notre légende sur le plus grand serveur PvP-Faction moddé francophone.</p>
             <div class="hero-buttons scroll-reveal delay-300">
                 <a href="#recruitment" class="btn btn-primary">Rejoindre la faction</a>
                 <a href="#about" class="btn btn-secondary">En savoir plus</a>
@@ -65,23 +65,8 @@
                     <p>Pour nous, le "Zénith" représente le point culminant de notre ambition. Nous allions l'organisation militaire d'une faction de pilleurs, le sens du détail de constructeurs hors pair, et la rigueur de farmeurs infatigables.</p>
                     <p>Que ce soit pour défendre nos outposts sous une pluie d'Améthyste ou pour optimiser nos claims de farm en Paladium, chaque membre contribue à l'ascension collective de la faction.</p>
                 </div>
-                <div class="about-stats scroll-reveal delay-200">
-                    <div class="glass-card stat-card">
-                        <div class="stat-number">25</div>
-                        <div class="stat-label">Membres Actifs</div>
-                    </div>
-                    <div class="glass-card stat-card">
-                        <div class="stat-number">#04</div>
-                        <div class="stat-label">Classement</div>
-                    </div>
-                    <div class="glass-card stat-card">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Détermination</div>
-                    </div>
-                    <div class="glass-card stat-card">
-                        <div class="stat-number">12M</div>
-                        <div class="stat-label">Monnaie Faction</div>
-                    </div>
+                <div class="about-stats scroll-reveal delay-200" id="stats-container">
+                    <!-- Les statistiques seront insérées ici dynamiquement par script.js -->
                 </div>
             </div>
         </div>
@@ -105,105 +90,8 @@
                 <button class="filter-btn" data-filter="builder">Builders</button>
             </div>
 
-            <div class="roster-grid scroll-reveal delay-200">
-                <!-- Chef -->
-                <div class="glass-card member-card" data-role="chef">
-                    <div class="member-avatar-wrapper">
-                        <div class="member-avatar-bg"></div>
-                        <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=ShadowChef" alt="Avatar" class="member-avatar">
-                    </div>
-                    <span class="member-rank rank-chef">Chef</span>
-                    <h4 class="member-name">ShadowPal</h4>
-                    <p class="member-specialty">Stratège & PvP-Man</p>
-                    <div class="member-socials">
-                        <a href="#" class="member-social-link"><i class="fab fa-discord"></i></a>
-                        <a href="#" class="member-social-link"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-
-                <!-- Officier -->
-                <div class="glass-card member-card" data-role="chef">
-                    <div class="member-avatar-wrapper">
-                        <div class="member-avatar-bg"></div>
-                        <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Aurelius" alt="Avatar" class="member-avatar">
-                    </div>
-                    <span class="member-rank rank-officier">Officier</span>
-                    <h4 class="member-name">Aurel_PvP</h4>
-                    <p class="member-specialty">Co-Leader & Pilleur</p>
-                    <div class="member-socials">
-                        <a href="#" class="member-social-link"><i class="fab fa-discord"></i></a>
-                    </div>
-                </div>
-
-                <!-- Officier / Recruteur -->
-                <div class="glass-card member-card" data-role="chef">
-                    <div class="member-avatar-wrapper">
-                        <div class="member-avatar-bg"></div>
-                        <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Elena" alt="Avatar" class="member-avatar">
-                    </div>
-                    <span class="member-rank rank-officier">Officier</span>
-                    <h4 class="member-name">Elena_Fm</h4>
-                    <p class="member-specialty">Relations & Recrutement</p>
-                    <div class="member-socials">
-                        <a href="#" class="member-social-link"><i class="fab fa-discord"></i></a>
-                    </div>
-                </div>
-
-                <!-- Farmeur -->
-                <div class="glass-card member-card" data-role="farmeur">
-                    <div class="member-avatar-wrapper">
-                        <div class="member-avatar-bg"></div>
-                        <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=FarmerX" alt="Avatar" class="member-avatar">
-                    </div>
-                    <span class="member-rank rank-membre">Membre</span>
-                    <h4 class="member-name">FermierFou</h4>
-                    <p class="member-specialty">Farmeur Suprême (Métier Lvl 100)</p>
-                    <div class="member-socials">
-                        <a href="#" class="member-social-link"><i class="fab fa-discord"></i></a>
-                    </div>
-                </div>
-
-                <!-- PvP -->
-                <div class="glass-card member-card" data-role="pvp">
-                    <div class="member-avatar-wrapper">
-                        <div class="member-avatar-bg"></div>
-                        <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Kratos" alt="Avatar" class="member-avatar">
-                    </div>
-                    <span class="member-rank rank-membre">Membre</span>
-                    <h4 class="member-name">KroNox_</h4>
-                    <p class="member-specialty">Machine de Guerre PvP</p>
-                    <div class="member-socials">
-                        <a href="#" class="member-social-link"><i class="fab fa-discord"></i></a>
-                    </div>
-                </div>
-
-                <!-- Builder -->
-                <div class="glass-card member-card" data-role="builder">
-                    <div class="member-avatar-wrapper">
-                        <div class="member-avatar-bg"></div>
-                        <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Archy" alt="Avatar" class="member-avatar">
-                    </div>
-                    <span class="member-rank rank-membre">Membre</span>
-                    <h4 class="member-name">Archytect</h4>
-                    <p class="member-specialty">Architecte des bases AP</p>
-                    <div class="member-socials">
-                        <a href="#" class="member-social-link"><i class="fab fa-discord"></i></a>
-                    </div>
-                </div>
-
-                <!-- Recrue -->
-                <div class="glass-card member-card" data-role="farmeur">
-                    <div class="member-avatar-wrapper">
-                        <div class="member-avatar-bg"></div>
-                        <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Tilio" alt="Avatar" class="member-avatar">
-                    </div>
-                    <span class="member-rank rank-recrue">Recrue</span>
-                    <h4 class="member-name">Tilio_Zenith</h4>
-                    <p class="member-specialty">Apprenti Farmeur</p>
-                    <div class="member-socials">
-                        <a href="#" class="member-social-link"><i class="fab fa-discord"></i></a>
-                    </div>
-                </div>
+            <div class="roster-grid scroll-reveal delay-200" id="roster-container">
+                <!-- Les cartes des membres seront générées dynamiquement par script.js -->
             </div>
         </div>
     </section>
@@ -218,96 +106,8 @@
                 <p>Notre feuille de route pour asseoir notre domination. Chaque défi nous rapproche de la perfection.</p>
             </div>
 
-            <div class="objectives-grid">
-                <!-- Objectif 1 -->
-                <div class="glass-card obj-card scroll-reveal">
-                    <div class="obj-header">
-                        <span class="obj-icon"><i class="fas fa-trophy"></i></span>
-                        <h4 class="obj-title">Niveau de Faction Max</h4>
-                    </div>
-                    <div class="obj-progress-container">
-                        <div class="obj-progress-bar" style="width: 85%;"></div>
-                    </div>
-                    <div class="obj-status">
-                        <span>Progression</span>
-                        <span class="obj-percentage">85%</span>
-                    </div>
-                </div>
-
-                <!-- Objectif 2 -->
-                <div class="glass-card obj-card scroll-reveal delay-100">
-                    <div class="obj-header">
-                        <span class="obj-icon"><i class="fas fa-shield-halved"></i></span>
-                        <h4 class="obj-title">Base Claims Securisée (AP)</h4>
-                    </div>
-                    <div class="obj-progress-container">
-                        <div class="obj-progress-bar" style="width: 100%;"></div>
-                    </div>
-                    <div class="obj-status">
-                        <span>Terminé</span>
-                        <span class="obj-percentage" style="color: #2ecc71;">100%</span>
-                    </div>
-                </div>
-
-                <!-- Objectif 3 -->
-                <div class="glass-card obj-card scroll-reveal delay-200">
-                    <div class="obj-header">
-                        <span class="obj-icon"><i class="fas fa-gem"></i></span>
-                        <h4 class="obj-title">Coffres Full Paladium</h4>
-                    </div>
-                    <div class="obj-progress-container">
-                        <div class="obj-progress-bar" style="width: 60%;"></div>
-                    </div>
-                    <div class="obj-status">
-                        <span>En cours</span>
-                        <span class="obj-percentage">60%</span>
-                    </div>
-                </div>
-
-                <!-- Objectif 4 -->
-                <div class="glass-card obj-card scroll-reveal">
-                    <div class="obj-header">
-                        <span class="obj-icon"><i class="fas fa-crosshairs"></i></span>
-                        <h4 class="obj-title">Contrôle des Outposts</h4>
-                    </div>
-                    <div class="obj-progress-container">
-                        <div class="obj-progress-bar" style="width: 40%;"></div>
-                    </div>
-                    <div class="obj-status">
-                        <span>En cours</span>
-                        <span class="obj-percentage">40%</span>
-                    </div>
-                </div>
-
-                <!-- Objectif 5 -->
-                <div class="glass-card obj-card scroll-reveal delay-100">
-                    <div class="obj-header">
-                        <span class="obj-icon"><i class="fas fa-sack-dollar"></i></span>
-                        <h4 class="obj-title">Objectif Économique (20M $)</h4>
-                    </div>
-                    <div class="obj-progress-container">
-                        <div class="obj-progress-bar" style="width: 75%;"></div>
-                    </div>
-                    <div class="obj-status">
-                        <span>En cours</span>
-                        <span class="obj-percentage">75%</span>
-                    </div>
-                </div>
-
-                <!-- Objectif 6 -->
-                <div class="glass-card obj-card scroll-reveal delay-200">
-                    <div class="obj-header">
-                        <span class="obj-icon"><i class="fas fa-dragon"></i></span>
-                        <h4 class="obj-title">Vaincre le Boss de Serveur</h4>
-                    </div>
-                    <div class="obj-progress-container">
-                        <div class="obj-progress-bar" style="width: 100%;"></div>
-                    </div>
-                    <div class="obj-status">
-                        <span>Terminé</span>
-                        <span class="obj-percentage" style="color: #2ecc71;">100%</span>
-                    </div>
-                </div>
+            <div class="objectives-grid" id="objectives-container">
+                <!-- Les objectifs seront générés dynamiquement par script.js -->
             </div>
         </div>
     </section>
@@ -322,60 +122,8 @@
                 <p>Aperçu de nos infrastructures, forteresses et exploits en jeu.</p>
             </div>
 
-            <div class="gallery-grid scroll-reveal">
-                <!-- Item 1 -->
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1605899435973-ca2d1a8861cf?q=80&width=600&auto=format&fit=crop" alt="Base Faction" class="gallery-img">
-                    <div class="gallery-overlay">
-                        <span class="gallery-tag">Base Claims</span>
-                        <h4 class="gallery-title">Forteresse du Zénith (AP)</h4>
-                    </div>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&width=600&auto=format&fit=crop" alt="Pillage" class="gallery-img">
-                    <div class="gallery-overlay">
-                        <span class="gallery-tag">Pillage</span>
-                        <h4 class="gallery-title">Pillage Légendaire - Faction Rivale</h4>
-                    </div>
-                </div>
-
-                <!-- Item 3 -->
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&width=600&auto=format&fit=crop" alt="PvP" class="gallery-img">
-                    <div class="gallery-overlay">
-                        <span class="gallery-tag">Combat PvP</span>
-                        <h4 class="gallery-title">Défense héroïque à l'Outpost Kura</h4>
-                    </div>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&width=600&auto=format&fit=crop" alt="Farm" class="gallery-img">
-                    <div class="gallery-overlay">
-                        <span class="gallery-tag">Farming</span>
-                        <h4 class="gallery-title">Notre ferme automatique à Netherite</h4>
-                    </div>
-                </div>
-
-                <!-- Item 5 -->
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&width=600&auto=format&fit=crop" alt="Membres" class="gallery-img">
-                    <div class="gallery-overlay">
-                        <span class="gallery-tag">Communauté</span>
-                        <h4 class="gallery-title">Photo de groupe fin de V9</h4>
-                    </div>
-                </div>
-
-                <!-- Item 6 -->
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&width=600&auto=format&fit=crop" alt="Stuff" class="gallery-img">
-                    <div class="gallery-overlay">
-                        <span class="gallery-tag">Richesse</span>
-                        <h4 class="gallery-title">La salle des coffres sécurisée</h4>
-                    </div>
-                </div>
+            <div class="gallery-grid scroll-reveal" id="gallery-container">
+                <!-- Les captures d'écran seront générées dynamiquement par script.js -->
             </div>
         </div>
     </section>
@@ -491,6 +239,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
