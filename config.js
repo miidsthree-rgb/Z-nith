@@ -50,4 +50,5 @@ const FACTION_CONFIG = {
             minecraftSeed: "LWXY134",
             discord: "lwxy134"
         }
-    ],
+    ]
+};
