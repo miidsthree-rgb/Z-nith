@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site officiel de la faction Zénith sur le serveur Minecraft Paladium PvP-Faction. Découvrez notre roster, nos objectifs et postulez pour nous rejoindre !">
+    <title>ZÉNITH - Faction Paladium</title>
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         NAVIGATION BAR
+         ========================================== -->
+    <header id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo-container">
+                <img src="assets/logo.png" alt="Logo Zénith" class="logo-img">
+                <span class="logo-text">ZÉ<span>NITH</span></span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">Présentation</a></li>
+                <li><a href="#roster" class="nav-link">Roster</a></li>
+                <li><a href="#objectives" class="nav-link">Objectifs</a></li>
+                <li><a href="#gallery" class="nav-link">Galerie</a></li>
+                <li><a href="#recruitment" class="btn btn-primary">Recrutement</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section id="hero">
+        <div class="hero-content">
+            <span class="hero-tagline scroll-reveal" id="hero-tagline">Faction Officielle - Paladium V10</span>
+            <h1 class="hero-title scroll-reveal delay-100" id="hero-title">ZÉNITH</h1>
+            <p class="hero-desc scroll-reveal delay-200" id="hero-desc">Atteindre les sommets, dominer le classement et forger notre légende sur le plus grand serveur PvP-Faction moddé francophone.</p>
+            <div class="hero-buttons scroll-reveal delay-300">
+                <a href="#recruitment" class="btn btn-primary">Rejoindre la faction</a>
+                <a href="#about" class="btn btn-secondary">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT / LORE SECTION
+         ========================================== -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text scroll-reveal">
+                    <h3>Atteindre le sommet céleste</h3>
+                    <p>Fondée par des passionnés de Paladium, <span class="highlight">Zénith</span> a été créée dans un seul et unique but : régner en maîtres absolus sur l'économie et le classement PvP-Faction.</p>
+                    <p>Pour nous, le "Zénith" représente le point culminant de notre ambition. Nous allions l'organisation militaire d'une faction de pilleurs, le sens du détail de constructeurs hors pair, et la rigueur de farmeurs infatigables.</p>
+                    <p>Que ce soit pour défendre nos outposts sous une pluie d'Améthyste ou pour optimiser nos claims de farm en Paladium, chaque membre contribue à l'ascension collective de la faction.</p>
+                </div>
+                <div class="about-stats scroll-reveal delay-200" id="stats-container">
+                    <!-- Les statistiques seront insérées ici dynamiquement par script.js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         ROSTER / MEMBERS SECTION
+         ========================================== -->
+    <section id="roster">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Notre Roster</h2>
+                <p>Les artisans de notre gloire. Chaque membre joue un rôle crucial dans le développement et la puissance de Zénith.</p>
+            </div>
+
+            <div class="roster-filters scroll-reveal">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="chef">Chefs & Officiers</button>
+                <button class="filter-btn" data-filter="farmeur">Farmeurs</button>
+                <button class="filter-btn" data-filter="pvp">Combattants</button>
+                <button class="filter-btn" data-filter="builder">Builders</button>
+            </div>
+
+            <div class="roster-grid scroll-reveal delay-200" id="roster-container">
+                <!-- Les cartes des membres seront générées dynamiquement par script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         OBJECTIVES SECTION
+         ========================================== -->
+    <section id="objectives">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Objectifs de Saison</h2>
+                <p>Notre feuille de route pour asseoir notre domination. Chaque défi nous rapproche de la perfection.</p>
+            </div>
+
+            <div class="objectives-grid" id="objectives-container">
+                <!-- Les objectifs seront générés dynamiquement par script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         GALLERY SECTION
+         ========================================== -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Galerie de Faction</h2>
+                <p>Aperçu de nos infrastructures, forteresses et exploits en jeu.</p>
+            </div>
+
+            <div class="gallery-grid scroll-reveal" id="gallery-container">
+                <!-- Les captures d'écran seront générées dynamiquement par script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         RECRUITEMENT SECTION
+         ========================================== -->
+    <section id="recruitment">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Rejoindre Zénith</h2>
+                <p>Vous avez le profil pour atteindre les sommets ? Remplissez ce formulaire et nos officiers étudieront votre candidature sous 24h.</p>
+            </div>
+
+            <div class="recruitment-container glass-card scroll-reveal" style="padding: 10px; max-width: 860px; margin: 0 auto;">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKzPXmUGjDUyg4TNcKbNtK1mMMH58i70SqVU6MVXDuHB4nKw/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" style="border-radius: 8px; background: white; border: none;">Chargement…</iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="#hero" class="logo-container">
+                        <img src="assets/logo.png" alt="Logo Zénith" class="logo-img">
+                        <span class="logo-text">ZÉ<span>NITH</span></span>
+                    </a>
+                    <p class="footer-desc">Une faction Paladium unie vers les sommets. PvP, Farm, Pillage et convivialité.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#hero">Accueil</a></li>
+                            <li><a href="#about">Présentation</a></li>
+                            <li><a href="#roster">Roster</a></li>
+                            <li><a href="#objectives">Objectifs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Serveur</h4>
+                        <ul>
+                            <li><a href="https://paladium-pvp.fr/" target="_blank">Site de Paladium</a></li>
+                            <li><a href="https://paladium-pvp.fr/shop" target="_blank">Boutique Paladium</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Faction Zénith - Paladium. Ce site n'est pas affilié à Mojang ni à Paladium.</p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-link"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
