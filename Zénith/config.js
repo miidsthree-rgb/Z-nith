@@ -50,52 +50,5 @@ const FACTION_CONFIG = {
             minecraftSeed: "LWXY134",
             discord: "lwxy134"
         }
-    ],
-
-    // 4. Objectifs de la Saison (Barres de progression)
-    objectives: [
-        {
-            titre: "Niveau de Faction Max",
-            icone: "fa-trophy",
-            pourcentage: 85,
-            statut: "Progression"
-        },
-        {
-            titre: "Base Claims Securisée (AP)",
-            icone: "fa-shield-halved",
-            pourcentage: 100,
-            statut: "Terminé"
-        },
-        {
-            titre: "Coffres Full Paladium",
-            icone: "fa-gem",
-            pourcentage: 60,
-            statut: "En cours"
-        },
-        {
-            titre: "Contrôle des Outposts",
-            icone: "fa-crosshairs",
-            pourcentage: 40,
-            statut: "En cours"
-        }
-    ],
-
-    // 5. Galerie d'images (Screenshots)
-    gallery: [
-        {
-            titre: "Forteresse du Zénith (AP)",
-            tag: "Base Claims",
-            image: "https://images.unsplash.com/photo-1605899435973-ca2d1a8861cf?q=80&width=600&auto=format&fit=crop"
-        },
-        {
-            titre: "Pillage Légendaire",
-            tag: "Pillage",
-            image: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&width=600&auto=format&fit=crop"
-        },
-        {
-            titre: "Combat PvP à l'Outpost",
-            tag: "Combat PvP",
-            image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&width=600&auto=format&fit=crop"
-        }
     ]
 };
