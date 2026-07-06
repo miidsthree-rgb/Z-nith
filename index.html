@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site officiel de la faction Zénith sur le serveur Minecraft Paladium PvP-Faction. Découvrez notre roster, nos objectifs et postulez pour nous rejoindre !">
+    <title>ZÉNITH - Faction Paladium</title>
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         NAVIGATION BAR
+         ========================================== -->
+    <header id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo-container">
+                <img src="assets/logo.png" alt="Logo Zénith" class="logo-img">
+                <span class="logo-text">ZÉ<span>NITH</span></span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">Présentation</a></li>
+                <li><a href="#roster" class="nav-link">Roster</a></li>
+                <li><a href="#objectives" class="nav-link">Objectifs</a></li>
+                <li><a href="#gallery" class="nav-link">Galerie</a></li>
+                <li><a href="#recruitment" class="btn btn-primary">Recrutement</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section id="hero">
+        <div class="hero-content">
+            <span class="hero-tagline scroll-reveal">Faction Officielle - Paladium V10</span>
+            <h1 class="hero-title scroll-reveal delay-100">ZÉNITH</h1>
+            <p class="hero-desc scroll-reveal delay-200">Atteindre les sommets, dominer le classement et forger notre légende sur le plus grand serveur PvP-Faction moddé francophone.</p>
+            <div class="hero-buttons scroll-reveal delay-300">
+                <a href="#recruitment" class="btn btn-primary">Rejoindre la faction</a>
+                <a href="#about" class="btn btn-secondary">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT / LORE SECTION
+         ========================================== -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text scroll-reveal">
+                    <h3>Atteindre le sommet céleste</h3>
+                    <p>Fondée par des passionnés de Paladium, <span class="highlight">Zénith</span> a été créée dans un seul et unique but : régner en maîtres absolus sur l'économie et le classement PvP-Faction.</p>
+                    <p>Pour nous, le "Zénith" représente le point culminant de notre ambition. Nous allions l'organisation militaire d'une faction de pilleurs, le sens du détail de constructeurs hors pair, et la rigueur de farmeurs infatigables.</p>
+                    <p>Que ce soit pour défendre nos outposts sous une pluie d'Améthyste ou pour optimiser nos claims de farm en Paladium, chaque membre contribue à l'ascension collective de la faction.</p>
+                </div>
+                <div class="about-stats scroll-reveal delay-200">
+                    <div class="glass-card stat-card">
+                        <div class="stat-number">25</div>
+                        <div class="stat-label">Membres Actifs</div>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <div class="stat-number">#04</div>
+                        <div class="stat-label">Classement</div>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Détermination</div>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <div class="stat-number">12M</div>
+                        <div class="stat-label">Monnaie Faction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         ROSTER / MEMBERS SECTION
+         ========================================== -->
+    <section id="roster">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Notre Roster</h2>
+                <p>Les artisans de notre gloire. Chaque membre joue un rôle crucial dans le développement et la puissance de Zénith.</p>
+            </div>
+
+            <div class="roster-filters scroll-reveal">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="chef">Chefs & Officiers</button>
+                <button class="filter-btn" data-filter="farmeur">Farmeurs</button>
+                <button class="filter-btn" data-filter="pvp">Combattants</button>
+                <button class="filter-btn" data-filter="builder">Builders</button>
+            </div>
+
+            <div class="roster-grid scroll-reveal delay-200">
+                <!-- Chef -->
+                <div class="glass-card member-card" data-role="chef">
+                    <div class="member-avatar-wrapper">
+                        <div class="member-avatar-bg"></div>
+                        <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=ShadowChef" alt="Avatar" class="member-avatar">
+                    </div>
+                    <span class="member-rank rank-chef">Chef</span>
+                    <h4 class="member-name">ShadowPal</h4>
+                    <p class="member-specialty">Stratège & PvP-Man</p>
+                    <div class="member-socials">
+                        <a href="#" class="member-social-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="member-social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Officier -->
+                <div class="glass-card member-card" data-role="chef">
+                    <div class="member-avatar-wrapper">
+                        <div class="member-avatar-bg"></div>
+                        <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Aurelius" alt="Avatar" class="member-avatar">
+                    </div>
+                    <span class="member-rank rank-officier">Officier</span>
+                    <h4 class="member-name">Aurel_PvP</h4>
+                    <p class="member-specialty">Co-Leader & Pilleur</p>
+                    <div class="member-socials">
+                        <a href="#" class="member-social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+
+                <!-- Officier / Recruteur -->
+                <div class="glass-card member-card" data-role="chef">
+                    <div class="member-avatar-wrapper">
+                        <div class="member-avatar-bg"></div>
+                        <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Elena" alt="Avatar" class="member-avatar">
+                    </div>
+                    <span class="member-rank rank-officier">Officier</span>
+                    <h4 class="member-name">Elena_Fm</h4>
+                    <p class="member-specialty">Relations & Recrutement</p>
+                    <div class="member-socials">
+                        <a href="#" class="member-social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+
+                <!-- Farmeur -->
+                <div class="glass-card member-card" data-role="farmeur">
+                    <div class="member-avatar-wrapper">
+                        <div class="member-avatar-bg"></div>
+                        <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=FarmerX" alt="Avatar" class="member-avatar">
+                    </div>
+                    <span class="member-rank rank-membre">Membre</span>
+                    <h4 class="member-name">FermierFou</h4>
+                    <p class="member-specialty">Farmeur Suprême (Métier Lvl 100)</p>
+                    <div class="member-socials">
+                        <a href="#" class="member-social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+
+                <!-- PvP -->
+                <div class="glass-card member-card" data-role="pvp">
+                    <div class="member-avatar-wrapper">
+                        <div class="member-avatar-bg"></div>
+                        <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Kratos" alt="Avatar" class="member-avatar">
+                    </div>
+                    <span class="member-rank rank-membre">Membre</span>
+                    <h4 class="member-name">KroNox_</h4>
+                    <p class="member-specialty">Machine de Guerre PvP</p>
+                    <div class="member-socials">
+                        <a href="#" class="member-social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+
+                <!-- Builder -->
+                <div class="glass-card member-card" data-role="builder">
+                    <div class="member-avatar-wrapper">
+                        <div class="member-avatar-bg"></div>
+                        <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Archy" alt="Avatar" class="member-avatar">
+                    </div>
+                    <span class="member-rank rank-membre">Membre</span>
+                    <h4 class="member-name">Archytect</h4>
+                    <p class="member-specialty">Architecte des bases AP</p>
+                    <div class="member-socials">
+                        <a href="#" class="member-social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+
+                <!-- Recrue -->
+                <div class="glass-card member-card" data-role="farmeur">
+                    <div class="member-avatar-wrapper">
+                        <div class="member-avatar-bg"></div>
+                        <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Tilio" alt="Avatar" class="member-avatar">
+                    </div>
+                    <span class="member-rank rank-recrue">Recrue</span>
+                    <h4 class="member-name">Tilio_Zenith</h4>
+                    <p class="member-specialty">Apprenti Farmeur</p>
+                    <div class="member-socials">
+                        <a href="#" class="member-social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         OBJECTIVES SECTION
+         ========================================== -->
+    <section id="objectives">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Objectifs de Saison</h2>
+                <p>Notre feuille de route pour asseoir notre domination. Chaque défi nous rapproche de la perfection.</p>
+            </div>
+
+            <div class="objectives-grid">
+                <!-- Objectif 1 -->
+                <div class="glass-card obj-card scroll-reveal">
+                    <div class="obj-header">
+                        <span class="obj-icon"><i class="fas fa-trophy"></i></span>
+                        <h4 class="obj-title">Niveau de Faction Max</h4>
+                    </div>
+                    <div class="obj-progress-container">
+                        <div class="obj-progress-bar" style="width: 85%;"></div>
+                    </div>
+                    <div class="obj-status">
+                        <span>Progression</span>
+                        <span class="obj-percentage">85%</span>
+                    </div>
+                </div>
+
+                <!-- Objectif 2 -->
+                <div class="glass-card obj-card scroll-reveal delay-100">
+                    <div class="obj-header">
+                        <span class="obj-icon"><i class="fas fa-shield-halved"></i></span>
+                        <h4 class="obj-title">Base Claims Securisée (AP)</h4>
+                    </div>
+                    <div class="obj-progress-container">
+                        <div class="obj-progress-bar" style="width: 100%;"></div>
+                    </div>
+                    <div class="obj-status">
+                        <span>Terminé</span>
+                        <span class="obj-percentage" style="color: #2ecc71;">100%</span>
+                    </div>
+                </div>
+
+                <!-- Objectif 3 -->
+                <div class="glass-card obj-card scroll-reveal delay-200">
+                    <div class="obj-header">
+                        <span class="obj-icon"><i class="fas fa-gem"></i></span>
+                        <h4 class="obj-title">Coffres Full Paladium</h4>
+                    </div>
+                    <div class="obj-progress-container">
+                        <div class="obj-progress-bar" style="width: 60%;"></div>
+                    </div>
+                    <div class="obj-status">
+                        <span>En cours</span>
+                        <span class="obj-percentage">60%</span>
+                    </div>
+                </div>
+
+                <!-- Objectif 4 -->
+                <div class="glass-card obj-card scroll-reveal">
+                    <div class="obj-header">
+                        <span class="obj-icon"><i class="fas fa-crosshairs"></i></span>
+                        <h4 class="obj-title">Contrôle des Outposts</h4>
+                    </div>
+                    <div class="obj-progress-container">
+                        <div class="obj-progress-bar" style="width: 40%;"></div>
+                    </div>
+                    <div class="obj-status">
+                        <span>En cours</span>
+                        <span class="obj-percentage">40%</span>
+                    </div>
+                </div>
+
+                <!-- Objectif 5 -->
+                <div class="glass-card obj-card scroll-reveal delay-100">
+                    <div class="obj-header">
+                        <span class="obj-icon"><i class="fas fa-sack-dollar"></i></span>
+                        <h4 class="obj-title">Objectif Économique (20M $)</h4>
+                    </div>
+                    <div class="obj-progress-container">
+                        <div class="obj-progress-bar" style="width: 75%;"></div>
+                    </div>
+                    <div class="obj-status">
+                        <span>En cours</span>
+                        <span class="obj-percentage">75%</span>
+                    </div>
+                </div>
+
+                <!-- Objectif 6 -->
+                <div class="glass-card obj-card scroll-reveal delay-200">
+                    <div class="obj-header">
+                        <span class="obj-icon"><i class="fas fa-dragon"></i></span>
+                        <h4 class="obj-title">Vaincre le Boss de Serveur</h4>
+                    </div>
+                    <div class="obj-progress-container">
+                        <div class="obj-progress-bar" style="width: 100%;"></div>
+                    </div>
+                    <div class="obj-status">
+                        <span>Terminé</span>
+                        <span class="obj-percentage" style="color: #2ecc71;">100%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         GALLERY SECTION
+         ========================================== -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Galerie de Faction</h2>
+                <p>Aperçu de nos infrastructures, forteresses et exploits en jeu.</p>
+            </div>
+
+            <div class="gallery-grid scroll-reveal">
+                <!-- Item 1 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1605899435973-ca2d1a8861cf?q=80&width=600&auto=format&fit=crop" alt="Base Faction" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Base Claims</span>
+                        <h4 class="gallery-title">Forteresse du Zénith (AP)</h4>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&width=600&auto=format&fit=crop" alt="Pillage" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Pillage</span>
+                        <h4 class="gallery-title">Pillage Légendaire - Faction Rivale</h4>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&width=600&auto=format&fit=crop" alt="PvP" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Combat PvP</span>
+                        <h4 class="gallery-title">Défense héroïque à l'Outpost Kura</h4>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&width=600&auto=format&fit=crop" alt="Farm" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Farming</span>
+                        <h4 class="gallery-title">Notre ferme automatique à Netherite</h4>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&width=600&auto=format&fit=crop" alt="Membres" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Communauté</span>
+                        <h4 class="gallery-title">Photo de groupe fin de V9</h4>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&width=600&auto=format&fit=crop" alt="Stuff" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Richesse</span>
+                        <h4 class="gallery-title">La salle des coffres sécurisée</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         RECRUITEMENT SECTION
+         ========================================== -->
+    <section id="recruitment">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Rejoindre Zénith</h2>
+                <p>Vous avez le profil pour atteindre les sommets ? Remplissez ce formulaire et nos officiers étudieront votre candidature sous 24h.</p>
+            </div>
+
+            <div class="recruitment-container glass-card scroll-reveal">
+                <form id="apply-form" class="recruitment-form">
+                    
+                    <div class="form-message" id="form-msg"></div>
+
+                    <!-- Pseudo Minecraft -->
+                    <div class="form-group">
+                        <label for="username" class="form-label">Pseudo Minecraft</label>
+                        <input type="text" id="username" name="username" class="form-input" placeholder="Ex: ShadowPal" required>
+                    </div>
+
+                    <!-- Âge -->
+                    <div class="form-group">
+                        <label for="age" class="form-label">Âge</label>
+                        <input type="number" id="age" name="age" class="form-input" min="12" max="99" placeholder="Ex: 16" required>
+                    </div>
+
+                    <!-- Rôle de prédilection -->
+                    <div class="form-group">
+                        <label for="role" class="form-label">Spécialité Principale</label>
+                        <select id="role" name="role" class="form-select" required>
+                            <option value="" disabled selected>Choisissez votre rôle...</option>
+                            <option value="farmeur">Farmeur (Métiers, ressources)</option>
+                            <option value="pvp">Combattant (PvP, Outposts, Events)</option>
+                            <option value="builder">Builder (Bases claims, Déco, AP)</option>
+                            <option value="pilleur">Pilleur (Tnt, assauts, claims)</option>
+                        </select>
+                    </div>
+
+                    <!-- Temps de jeu -->
+                    <div class="form-group">
+                        <label for="playtime" class="form-label">Heures de jeu par semaine</label>
+                        <input type="number" id="playtime" name="playtime" class="form-input" min="1" max="168" placeholder="Ex: 15" required>
+                    </div>
+
+                    <!-- Discord -->
+                    <div class="form-group full-width">
+                        <label for="discord" class="form-label">Identifiant Discord (ex: pseudo#0000 ou pseudo)</label>
+                        <input type="text" id="discord" name="discord" class="form-input" placeholder="Ex: shadowpal#1234" required>
+                    </div>
+
+                    <!-- Motivations -->
+                    <div class="form-group full-width">
+                        <label for="motivations" class="form-label">Vos Motivations & Expérience</label>
+                        <textarea id="motivations" name="motivations" class="form-textarea" placeholder="Présentez-vous brièvement, détaillez votre expérience sur Paladium et expliquez pourquoi vous voulez rejoindre Zénith..." required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-submit-container">
+                        <button type="submit" class="btn btn-primary form-submit-btn">Envoyer ma candidature</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="#hero" class="logo-container">
+                        <img src="assets/logo.png" alt="Logo Zénith" class="logo-img">
+                        <span class="logo-text">ZÉ<span>NITH</span></span>
+                    </a>
+                    <p class="footer-desc">Une faction Paladium unie vers les sommets. PvP, Farm, Pillage et convivialité.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#hero">Accueil</a></li>
+                            <li><a href="#about">Présentation</a></li>
+                            <li><a href="#roster">Roster</a></li>
+                            <li><a href="#objectives">Objectifs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Serveur</h4>
+                        <ul>
+                            <li><a href="https://paladium-pvp.fr/" target="_blank">Site de Paladium</a></li>
+                            <li><a href="https://paladium-pvp.fr/shop" target="_blank">Boutique Paladium</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Faction Zénith - Paladium. Ce site n'est pas affilié à Mojang ni à Paladium.</p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-link"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
